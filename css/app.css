@@ -1,0 +1,255 @@
+:root {
+  --r-main-font-size: 26px;
+  --r-main-font: Inter, sans-serif;
+  --r-heading-font: var(--r-main-font);
+  --r-heading-font-weight: 700;
+  --r-heading-text-transform: normal;
+  --r-link-color: #c5c8c6;
+  --r-link-color-hover: #b294bb;
+  --border-radius: 5px;
+  --font-color: #fff;
+  --background-color-darker: #fff;
+  --r-code-font: "JetBrains Mono", monospace;
+  --code-background-darker: #353535;
+  --code-font-color: #c5c8c6;
+  --code-keyword-color: #b294bb;
+  --code-string-color: #b5bd68;
+  --code-variable-color: #f0c674;
+  --code-comment-color: #969896;
+}
+
+* {
+  color: var(--font-color);
+  font-family: var(--r-heading-font);
+  font-weight: var(--r-heading-font-weight);
+  font-size: var(--r-main-font-size);
+  text-transform: var(--r-heading-text-transform);
+}
+
+.reveal .slide-background {
+  background-size: 100% 100%;
+  background-position: 0 0;
+  background-image: 
+    radial-gradient(40% 30% at 110% 0%, #8a3b7530 0%, #00000000 100%),
+    radial-gradient(40% 20% at 40% 0%, #5d5184ff 0%, #00000000 100%),
+    radial-gradient(40% 40% at 0% 100%, #5d5184ff 1%, #00000000 100%),
+    radial-gradient(142% 91% at 111% 84%, #2a0134ff 0%, #1a1a1aff 100%);
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .slide-number {
+  right: auto;
+  left: 8px;
+}
+
+.section-title > h1, 
+.section-title > h2 {
+  color: var(--font-color);
+}
+
+h1 h2,
+.name,
+.title {
+  color: var(--font-color);
+  font-weight: bold;
+  display: inline-block;
+}
+
+h1 h2 {
+  padding: 4px 10px;
+}
+
+.name {
+  font-size: 1.2em;
+  background: var(--background-color-darker);
+  padding: 4px 10px;
+  border-radius: var(--border-radius);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content > img {
+  height: 175px;
+}
+
+.lists ul {
+  list-style-type: none;
+  margin-top: 15px;
+}
+
+.lists ul li {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.lists ul li {
+  display: block;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: var(--bg-principal-color);
+}
+
+.lists ul li p {
+  margin: 0;
+  padding-left: 20px;
+  text-indent: -20px;
+  color: var(--font-color);
+}
+
+.lists ul li p::before {
+  display: flex;
+  color: var(--bg-secondary-color);
+}
+
+ul.no-list {
+  list-style-type: none;
+}
+
+ul.margin > li + li {
+  margin-top: 0.5em;
+}
+
+.list-item {
+  margin-bottom: 10px;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  height: 500px;
+}
+
+span {
+  font-size: 20px;
+}
+
+.icon {
+  height: 60px;
+  width: 60px;
+}
+
+.profile {
+  margin: 0;
+  width: 500px;
+  border-radius: var(--border-radius);
+}
+
+.link {
+  color: var(--r-link-color);
+}
+
+.link:hover {
+  color: var(--r-link-color-hover);
+}
+
+#about-me {
+  margin-bottom: 2rem;
+}
+
+.about-me-content {
+  display: flex;
+  align-items: center;
+}
+
+.profile-container {
+  padding: 2rem;
+}
+
+.profile {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+
+.about-me-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-me-text ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-me-text ul li {
+  display: flex;
+  align-items: center;
+}
+
+.about-me-text ul li p {
+  margin-left: 20px;
+}
+
+.about-me-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.about-me-links div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-links a {
+  color: var(--r-link-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-me-links a:hover {
+  text-decoration: underline;
+}
+
+.about-me-links p {
+  margin: 0.5rem 0;
+}
+
+.icon-about-me {
+  width: 40px;
+  height: 40px;
+}
+
+.video {
+  height: 600px;
+}
+
+.section-code {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.code pre {
+  font-size: 19px; 
+}
+
+.code code {
+  font-size: 20px; 
+  border-radius: var(--border-radius);
+}
+
+.QRCode {
+  width: 450px;
+}
+
+blockquote {
+  padding: 5px;
+  text-align: center;
+}
